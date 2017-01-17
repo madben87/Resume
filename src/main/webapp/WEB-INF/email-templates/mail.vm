@@ -1,0 +1,18 @@
+
+<body>
+<div style="margin-left: auto; margin-right: auto; margin-bottom: 20px">
+    <div style="float: left; box-sizing: border-box; padding: 0 0.75rem; min-height: 1px; width: 100%; margin-left: auto; left: auto; right: auto; width: 50%; margin-left: auto; left: auto; right: auto;">
+        <div style="position: relative; margin: 0.5rem 0 1rem 0; background-color: #fff; transition: box-shadow .25s; border-radius: 2px; background-color: #607d8b !important; background-color: #546e7a !important;">
+            <div style="padding: 20px; border-radius: 0 0 2px 2px; color: #FFFFFF !important;">
+                <span style="line-height: 48px;">From : ${name}</span>
+                <p>${message}</p>
+            </div>
+            <div style="position: relative; background-color: inherit; border-top: 1px solid rgba(160, 160, 160, 0.2); padding: 20px;">
+                <p style="color: #FFB535;">Phone : ${phone}</p>
+                <p style="color: #FFB535;">Email : <a style="color: #FFB535;" href="mailto:${my_email}" rel="noopener">${email}</a></p> #*mailto: important for my_email hiperlink*#
+                <p style="color: #FFB535;">Date : ${date}</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
