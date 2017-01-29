@@ -70,8 +70,9 @@ public class EmailService {
                 }
             };
 
-            mailSender.send(preparator);
             res = true;
+
+            mailSender.send(preparator);
 
         } catch (Exception ex) {
             ex.printStackTrace();

@@ -23,7 +23,7 @@ public class AjaxController {
 
     @RequestMapping(value = "/ajaxTest", method = RequestMethod.POST)
     public @ResponseBody
-    Set<String> ajaxTest(@RequestParam (required=false, value = "criteria") String criteria) {
+    Set<String> ajaxMessageList(@RequestParam (/*required=false, value = */"criteria") String criteria) {
 
         User user = userService.findById(Long.valueOf(criteria));
 

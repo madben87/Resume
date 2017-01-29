@@ -23,7 +23,7 @@
 <body>
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">USER</a>
+        <a id="logo-container" href="user" class="brand-logo">USER</a>
 
         <ul id="nav-mobile" class="side-nav">
             <li><a href="#">Navbar Link</a></li>

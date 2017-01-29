@@ -71,7 +71,7 @@ public class Message implements Comparable<Message>{
         this.user = user;
     }
 
-    @OneToMany(mappedBy = "message", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "message", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     public Set<Answer> getAnswers_list() {
         return answers_list;
     }

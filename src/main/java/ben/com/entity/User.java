@@ -53,7 +53,7 @@ public class User implements Comparable<User>{
         this.phone = phone;
     }
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     public Set<Message> getMessages_list() {
         return messages_list;
     }
