@@ -1,70 +1,24 @@
 # Resume
 
-`test`
-## h2 заголовок второго уровня
-### h3 заголовок третьего уровня
-#### h4 заголовок четвёртого уровня
-##### h5 заголовок пятого уровня
-###### h6 заголовок шестого уровня
-[Мой сайт](http://webdesign.ru.net)
+**This web project demonstrates my programming skills in Java. This project was created in the framework, Spring MVC, and assembled with the help of builder automatic Maven. Project Security is provided with the help of Spring Security, in particular user authentication.**
 
-<http://webdesign.ru.net/article/pravila-oformleniya-fayla-readmemd-na-github.html>
+##Project Architecture:
 
-**Жирный шрифт**
+![screenshot of sample](http://s48.radikal.ru/i119/1702/a7/74eaa6345f1a.png)
 
-***Наклонный жирный***
+**Main page is available for any non-authorized user, where you can find all the information about me and my skills. It is also possible to write a letter to me that will be sent to my e-mail and written in the application
+database.**
 
-`выделенные слова`
+**Spring-controller «EmailController» is responsible for sending messages and recording them in a database.**
 
-    dir /fonts
-    
-        /images
-    
-   dir /js
-   
-   ```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
+**When you go to admin page you must pass authorization. Spring Security ensures the safety of the whole project.**
 
-```php
-<?php here_pagecontent(); ?>
-```
+**Administrator can chat with the ability to view incoming messages and send a reply to the email address specified by the user. Loading incoming messages from the database and sending messages implemented by JQuery Ajax technology and controller «AjaxController».**
 
-```scss 
-/* или css */
-@import "bower_components/tree-normalize/generic.normalize";
-h1 {
- font-size:1.5em;
- font-weight: 300;
-}
-```
+**For storing user and messages information is used relational MySQL database with links between tables "One-to-Many":**
 
-> Текст
-> 
-> Продолжение текста выделенного блока
-> Завершение текста
+![screenshot of sample](http://s020.radikal.ru/i702/1702/51/efeac2e7eeb2.png)
 
-Название файла  | Содержание файла
-----------------|----------------------
-style.css       | Пустой файл каскадной таблицы стилей, в который производится сбока необходимых стилей
-reset.css       | Reset CSS от Эрика Мейера
-normalize.css   | Нормалайзер CSS от Nicolas Gallagher
-block.css       | Основные стили блоков системы
-addition.css    | Дополнительные стили
-fontawesome.css | Стили иконочного шрифта
-layout.css      | Основные стили, применительно к определённому сайту
-lightbox.css    | Стили лайтбокса, если таковой используется
-index.html      | Индексный файл для проверки вносимых изменений
+##To copy a project:
 
-* Пункт 1
-* Пункт 2
-* Пункт 3
-
-1. Пункт 1
-2. Пункт 2
-3. Пункт 3
-
-_наклонный_ _шрифт_ _наклонный_ _шрифт_
-
-![screenshot of sample](http://webdesign.ru.net/images/Heydon_min.jpg)
-
+`$ git clone git://github.com/madben87/Resume.git`
