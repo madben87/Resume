@@ -20,5 +20,14 @@ database.**
 ![screenshot of sample](http://s020.radikal.ru/i702/1702/51/efeac2e7eeb2.png)
 
 ##To copy a project:
-
 `$ git clone git://github.com/madben87/Resume.git`
+
+##To run the application:
+
+**From the command line whith Maven**
+
+`$ cd Resume`
+
+`$ mvn package`
+
+**and deploy Resume.war file to any application server.**
